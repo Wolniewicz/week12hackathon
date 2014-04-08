@@ -5,14 +5,12 @@ from table_def import Model
  
 engine = create_engine('sqlite:///models.db', echo=True)
 
-
+#Create several models
+m1 = Model("chair","/img/chair.jpg")
 # create a Session
 Session = sessionmaker(bind=engine)
 session = Session()
  
-#Create several models
-m1 = Model("chair","/img/chair.jpg")
-
 # Add the record to the session object
 session.add_all([m1])
 # commit the record the database
