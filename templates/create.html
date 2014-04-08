@@ -52,58 +52,35 @@
             <div class="col-xs-10">
 
               <form role="form">
-                <div class="input-group">
-                  <span class="input-group-addon">@</span>
-                  <input type="text" class="form-control" placeholder="Search Models">
+
+                <div class="form-group">
+                  <label for="model_name">Model Name</label>
+                  <input type="email" class="form-control" id="model_name" name="model_name" placeholder="Enter Model Name">
                 </div>
+                <div class="field">
+                  <label for="model_file">Model File</label>
+                  
+                  <div class="fileupload fileupload-new" data-provides="fileupload">
+                    <div class="input-group">
+                      <div class="uneditable-input col-lg-3"><i class="icon-file fileupload-exists"></i> 
+                        <span class="fileupload-preview"></span>
+                      </div>
+                      <span class="btn btn-default btn-file">
+                        <input capture="camera" class="file-input" id="model_file" name="model_file" type="file">
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <hr/>
+
+                <btn type="submit" class="btn btn-primary pull-right">Submit</btn>
               </form>
               
             </div>
             <div class="col-xs-1"></div>
           </div>
-
-
-          <hr/>
-
-          <div class="row">
-
-            <div class="col-xs-1"></div>
-            <div class="col-xs-10">
-              
-
-              <ul class="list-group">
-              
-
-                <li class="list-group-item">
-                  <div>
-                    <div class="col-xs-12" style="text-align: center;">
-                      <img src="img/rocket.png" height="200px" />
-                    </div>
-                    <h2>Rocket</h2>
-                  </div>
-                </li>
-                
-                <li class="list-group-item">
-                  <div>
-                    <div class="col-xs-12" style="text-align: center;">
-                      <img src="img/rocket.png" height="200px" />
-                    </div>
-                    <h2>Rocket</h2>
-                  </div>
-                </li>
-
-                
-              </ul>
-
-
-
-
-            </div>
-            <div class="col-xs-1"></div>
-
-            
-          </div>
-
 
 
         </div>
