@@ -21,17 +21,17 @@ class Model(db.Model):
         self.img_path = img_path
 
 @app.route('/index')
-def view():
+def index():
 
 	return render_template('index.html')
 	
 @app.route('/create')
-def view():
+def create():
 
 	return render_template('create.html')
 	
 @app.route('/show')
-def view():
+def show():
 
 	return render_template('show.html')
 
